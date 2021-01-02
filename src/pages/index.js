@@ -16,12 +16,11 @@ import IgedlaLogo from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/asset
 export default () => (
   <Layout>
     <section className="pt-20 md:pt-40 bg-blue-300">
-      <div className="container mx-auto px-8 lg:flex">
+      <div className="container mx-auto px-8 lg:flex ">
         <div className="text-center lg:text-left lg:w-1/2">
           <img src={IgedlaLogo} alt='Igedla Logo' />
           <p className="text-xl lg:text-2xl mt-6 font-roboto font-light">
-            Free landing page template to promote your business startup and generate leads for the
-            offered services
+            Igedla provides quick and easy results—so you know what’s going on right away and how to fix it:
           </p>
           <p className="mt-8 md:mt-12">
             <Button size="lg">Get the App!</Button>
@@ -29,7 +28,7 @@ export default () => (
           <p className="mt-4 text-gray-600">Available on iOS and Android</p>
         </div>
         <div className="lg:w-1/2">
-          <img className="mb-4 rounded-t-lg rounded-l-lg" src={ChatScreenShot} alt='igedla logo'/>
+          <img className="mb-4 ml-48 rounded-lg" src={ChatScreenShot} alt='igedla logo'/>
         </div>
       </div>
     </section>
