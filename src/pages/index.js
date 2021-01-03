@@ -40,8 +40,7 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">What's going on:</p>
               <p className="mt-4">
-                Igedla/Iggy understands you and helps you make sense of your symptoms. 
-                
+                Igedla/Iggy understands you and helps you make sense of your symptoms.                 
               </p>
             </Card>
           </div>
@@ -49,16 +48,15 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">How to fix it:</p>
               <p className="mt-4">
-                Whether it's self-care or urgent care, Igedla/Iggy will always recommend the right next steps
+                Whether it's self-care or urgent care, Iggy will always recommend the right next steps
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
+              <p className="font-semibold text-xl">Iggy Checks Back in:</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                If you give us permission, we'll follow up on your progress via text
               </p>
             </Card>
           </div>
@@ -125,7 +123,7 @@ export default () => (
     </section>
     <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
+        <LabelText className="mb-8 text-gray-600 text-center">See why our customers love us</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
           {customerData.map(customer => (
             <div key={customer.customerName} className="flex-1 px-3">
