@@ -1,33 +1,32 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
+import SquareLogo from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/assets/logo-square.png'
 
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
-      <div className="flex items-center text-2xl">
+      <div className="flex items-center text-2xl text-blue-800">
         <div className="w-12 mr-3">
-          <LogoIcon />
+          <img src={SquareLogo} alt='Igedla Logo' />
         </div>
-        Lander
+        Igedla
       </div>
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4" href="#features">
-          Features
+          Home
         </AnchorLink>
         <AnchorLink className="px-4" href="#services">
-          Services
+          About Us
         </AnchorLink>
         <AnchorLink className="px-4" href="#stats">
-          Stats
+          FAQ
         </AnchorLink>
         <AnchorLink className="px-4" href="#testimonials">
-          Testimonials
+          Contact
         </AnchorLink>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Start Free Trial</Button>
       </div>
     </div>
   </header>

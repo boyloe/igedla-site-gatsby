@@ -7,6 +7,9 @@ module.exports = {
           default: 'hsl(207, 73%, 57%)',
           darker: 'hsl(207, 73%, 44%)'
         }
+      },
+      fontFamily: {
+        'roboto': ["'Roboto:wght@500', sans-serif"]
       }
     }
   },

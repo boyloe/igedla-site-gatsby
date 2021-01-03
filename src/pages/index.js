@@ -9,26 +9,26 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
+import ChatScreenShot from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/assets/IgedlaChatScreenShot.png'
+import IgedlaLogo from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/assets/cropped-logo-igedla.png'
+
 
 export default () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
-      <div className="container mx-auto px-8 lg:flex">
+    <section className="pt-20 md:pt-40 bg-blue-300">
+      <div className="container mx-auto px-8 lg:flex ">
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Main title of your landing page
-          </h1>
-          <p className="text-xl lg:text-2xl mt-6 font-light">
-            Free landing page template to promote your business startup and generate leads for the
-            offered services
+          <img src={IgedlaLogo} alt='Igedla Logo' />
+          <p className="text-xl lg:text-2xl mt-6 font-roboto font-light">
+            Igedla provides quick and easy results—so you know what’s going on right away and how to fix it:
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
+            <Button size="lg">Get the App!</Button>
           </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
+          <p className="mt-4 text-gray-600">Available on iOS and Android</p>
         </div>
         <div className="lg:w-1/2">
-          <HeroImage />
+          <img className="mb-4 ml-48 rounded-lg" src={ChatScreenShot} alt='chat bot screenshot'/>
         </div>
       </div>
     </section>
