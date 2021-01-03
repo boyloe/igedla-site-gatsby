@@ -28,7 +28,7 @@ export default () => (
           <p className="mt-4 text-gray-600">Available on iOS and Android</p>
         </div>
         <div className="lg:w-1/2">
-          <img className="mb-4 ml-48 rounded-lg" src={ChatScreenShot} alt='chat bot screenshot'/>
+          <img className="mb-4 ml-48 hidden lg:inline-flex rounded-lg" src={ChatScreenShot} alt='chat bot screenshot'/>
         </div>
       </div>
     </section>
@@ -38,19 +38,18 @@ export default () => (
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
+              <p className="font-semibold text-xl">What's going on:</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Igedla/Iggy understands you and helps you make sense of your symptoms. 
+                
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
+              <p className="font-semibold text-xl">How to fix it:</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Whether it's self-care or urgent care, Igedla/Iggy will always recommend the right next steps
               </p>
             </Card>
           </div>

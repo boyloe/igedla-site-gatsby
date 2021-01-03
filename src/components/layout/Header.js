@@ -17,7 +17,7 @@ const Header = () => (
           Home
         </AnchorLink>
         <AnchorLink className="px-4" href="#services">
-          About Us
+          About
         </AnchorLink>
         <AnchorLink className="px-4" href="#stats">
           FAQ
