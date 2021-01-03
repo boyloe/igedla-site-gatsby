@@ -11,10 +11,10 @@ const Footer = () => (
         <h2 className="text-lg font-semibold">Important Links</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://codebushi.com">Terms &amp; Conditions</a>
+            <a href="/">Terms &amp; Conditions</a>
           </li>
           <li>
-            <a href="https://codebushi.com">Privacy Policy</a>
+            <a href="/">Privacy Policy</a>
           </li>
         </ul>
       </div>
