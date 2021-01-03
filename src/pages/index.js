@@ -37,6 +37,7 @@ export default () => (
     <section id="features" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold text-blue-800">Let's Get Started</h2>
+
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
@@ -69,8 +70,10 @@ export default () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
+
           <h3 className="text-3xl font-semibold leading-tight text-blue-800">Assess your risk for Covid-19</h3>
           <p className="mt-8 text-xl font-light leading-relaxed text-blue-900">
+
             Are you at a higher risk of COVID complications, experiencing symptoms, or recently exposed. 
             Igedla can help you determine if you're positive and the best treatment for you. 
           </p>
@@ -86,12 +89,15 @@ export default () => (
             Check your symptoms
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed text-blue-900">
+
             Whether you have abnormal cholesterol, depression, or a simple cold, you can easily
             learn more about your symptoms and get in contact with an online doctor if needed. 
           </p>
         </div>
       }
+
       secondarySlot={<img src={DoctorVisits} alt='chatbot-clipart' />}
+
     />
     {/* <SplitSection
       primarySlot={
@@ -138,6 +144,7 @@ export default () => (
     <section className="container mx-auto my-20 py-24 bg-blue-300 rounded-lg text-center">
       <h3 className="text-5xl font-semibold text-blue-800">How are you feeling today?</h3>
       <p className="mt-8 text-xl font-light text-blue-800">
+
         Download Igedla and try it out for yourself
       </p>
       <p className="mt-8">
