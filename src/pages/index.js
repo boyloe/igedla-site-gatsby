@@ -28,7 +28,7 @@ export default () => (
           <p className="mt-4 text-gray-600">Available on iOS and Android</p>
         </div>
         <div className="lg:w-1/2">
-          <img className="mb-4 ml-48 rounded-lg" src={ChatScreenShot} alt='igedla logo'/>
+          <img className="mb-4 ml-48 rounded-lg" src={ChatScreenShot} alt='chat bot screenshot'/>
         </div>
       </div>
     </section>
