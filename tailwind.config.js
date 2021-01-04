@@ -9,6 +9,7 @@ module.exports = {
         }
       },
       fontFamily: {
+        // eslint-disable-next-line prettier/prettier
         'roboto': ["'Roboto:wght@500', sans-serif"]
       }
     }

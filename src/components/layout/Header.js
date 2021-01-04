@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import IgedlaLogo from '../../assets/cropped-logo-igedla.png';
 
-
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
