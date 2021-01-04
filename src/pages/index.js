@@ -31,7 +31,7 @@ export default () => (
         </div>
         <div className="lg:w-1/2">
           <img
-            className="mb-8 ml-48 hidden lg:inline-flex rounded-lg"
+            className="mb-8 ml-48 hidden lg:inline-flex rounded-lg shadow-xl"
             src={ChatScreenShot}
             alt="chat bot screenshot"
           />
@@ -72,22 +72,6 @@ export default () => (
       </div>
     </section>
     <SplitSection
-      id="services"
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-2xl font-semibold leading-tight text-blue-800">
-            Assess your risk for Covid-19
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed text-blue-900">
-            Are you at a higher risk of COVID complications, experiencing symptoms, or recently
-            exposed. Igedla can help you determine if you're positive and the best treatment for
-            you.
-          </p>
-        </div>
-      }
-      secondarySlot={<img src={CovidTransparent} alt="covid-logo" />}
-    />
-    <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
@@ -95,12 +79,27 @@ export default () => (
             Check your symptoms
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed text-blue-900">
-            Whether you have abnormal cholesterol, depression, or a simple cold, you can easily
-            learn more about your symptoms and get in contact with an online doctor if needed.
+            Learn more about your symptoms and get results fast! Enter multiple symptoms in free text
+            with over 6,000 diseases covered
           </p>
         </div>
       }
       secondarySlot={<img src={DoctorVisits} alt="chatbot-clipart" />}
+    />
+    <SplitSection
+      id="services"
+      primarySlot={
+        <div className="lg:pr-32 xl:pr-48">
+          <h3 className="text-2xl font-semibold leading-tight text-blue-800">
+            Assess your risk for COVID-19
+          </h3>
+          <p className="mt-8 text-xl font-light leading-relaxed text-blue-900">
+            Are you at a higher risk of COVID complications, experiencing symptoms, or recently
+            exposed. Igedla can provide guidance on the best treatment options.
+          </p>
+        </div>
+      }
+      secondarySlot={<img src={CovidTransparent} alt="covid-logo" />}
     />
     {/* <SplitSection
       primarySlot={

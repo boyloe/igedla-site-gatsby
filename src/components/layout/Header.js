@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import SquareLogo from '../../assets/logo-square.png';
+import IgedlaLogo from '../../assets/cropped-logo-igedla.png';
+
 
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl text-blue-800">
-        <div className="w-12 mr-3">
-          <img src={SquareLogo} alt="Igedla Logo" />
+        <div className="w-32 mr-3">
+          <img src={IgedlaLogo} alt="Igedla Logo" />
         </div>
-        Igedla
       </div>
       <div className="flex md:justify-end mt-4 sm:mt-0 ">
         <Link className="px-6" to="/">

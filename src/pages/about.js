@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 import IgedlaVideo from '../assets/Igedla-final.mp4';
 
