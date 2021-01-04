@@ -1,5 +1,6 @@
 import React from 'react'
-import IgedlaVideo from '../assets/Igedla-final.mp4'
+import IgedlaVideo from '../assets/Igedla-final.mp4';
+
 
 export const about = () => {
     return (

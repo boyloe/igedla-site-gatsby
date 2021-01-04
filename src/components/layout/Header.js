@@ -1,5 +1,4 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import SquareLogo from '../../assets/logo-square.png';
 
@@ -16,18 +15,18 @@ const Header = () => (
         <Link className="px-6" to="/">
           Home
         </Link>
-        <AnchorLink className="px-6" href="#services">
+        <Link className="px-6" to="/about">
           About
-        </AnchorLink>
-        <Link className="px-6" to="/employers">
-          For Employers{' '}
         </Link>
-        <AnchorLink className="px-6" href="#stats">
+        <Link className="px-6" to="/employers">
+          Employers
+        </Link>
+        <Link className="px-6" to="/faq">
           FAQ
-        </AnchorLink>
-        <AnchorLink className="px-6" href="#testimonials">
+        </Link>
+        <Link className="px-6" to="/contact">
           Contact
-        </AnchorLink>
+        </Link>
       </div>
       <div className="hidden md:block" />
     </div>

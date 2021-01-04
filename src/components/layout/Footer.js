@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const Footer = () => (
   <footer className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
@@ -14,7 +15,7 @@ const Footer = () => (
             <a href="/">Terms &amp; Conditions</a>
           </li>
           <li>
-            <a href="/">Privacy Policy</a>
+            <Link to="/privacy">Privacy Policy</Link>
           </li>
         </ul>
       </div>
