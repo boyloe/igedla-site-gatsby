@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Button from '../components/Button';
 import Card from '../components/Card';
@@ -5,24 +6,23 @@ import CustomerCard from '../components/CustomerCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
-import StatsBox from '../components/StatsBox';
+// import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
-import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
-import ChatScreenShot from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/assets/IgedlaChatScreenShot.png'
-import IgedlaLogo from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/assets/cropped-logo-igedla.png'
-import CovidTransparent from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/assets/coronavirus_transparent.png'
-import DoctorVisits from '/Users/bryanoyloe/Igedla/gatsby-starter-lander/src/assets/doctor-visits.png'
-
+// eslint-disable-next-line import/no-unresolved
+import ChatScreenShot from '../assets/IgedlaChatScreenShot.png';
+import IgedlaLogo from '../assets/cropped-logo-igedla.png';
+import CovidTransparent from '../assets/coronavirus_transparent.png';
+import DoctorVisits from '../assets/doctor-visits.png';
 
 export default () => (
   <Layout>
     <section className="pt-20 md:pt-40 bg-blue-300">
       <div className="container mx-auto px-8 lg:flex ">
         <div className="text-center lg:text-left lg:w-1/2">
-          <img src={IgedlaLogo} alt='Igedla Logo' />
+          <img src={IgedlaLogo} alt="Igedla-logo" />
           <p className="text-xl lg:text-2xl mt-6 font-roboto text-blue-800 font-light">
-            Igedla provides quick and easy results—so you know what’s going on right away and how to fix it:
+            Igedla provides quick and easy results—so you know what’s going on right away and how to
+            fix it:
           </p>
           <p className="mt-8 md:mt-12">
             <Button size="lg">Get the App!</Button>
@@ -30,7 +30,11 @@ export default () => (
           <p className="mt-4 text-gray-600">Available on iOS and Android</p>
         </div>
         <div className="lg:w-1/2">
-          <img className="mb-8 ml-48 hidden lg:inline-flex rounded-lg" src={ChatScreenShot} alt='chat bot screenshot'/>
+          <img
+            className="mb-8 ml-48 hidden lg:inline-flex rounded-lg"
+            src={ChatScreenShot}
+            alt="chat bot screenshot"
+          />
         </div>
       </div>
     </section>
@@ -43,7 +47,7 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">What's going on:</p>
               <p className="mt-4">
-                Igedla/Iggy understands you and helps you make sense of your symptoms.                 
+                Igedla/Iggy understands you and helps you make sense of your symptoms.
               </p>
             </Card>
           </div>
@@ -51,7 +55,8 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">How to fix it:</p>
               <p className="mt-4">
-                Whether it's self-care or urgent care, Iggy will always recommend the right next steps
+                Whether it's self-care or urgent care, Iggy will always recommend the right next
+                steps
               </p>
             </Card>
           </div>
@@ -70,34 +75,32 @@ export default () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-
-          <h3 className="text-3xl font-semibold leading-tight text-blue-800">Assess your risk for Covid-19</h3>
+          <h3 className="text-2xl font-semibold leading-tight text-blue-800">
+            Assess your risk for Covid-19
+          </h3>
           <p className="mt-8 text-xl font-light leading-relaxed text-blue-900">
-
-            Are you at a higher risk of COVID complications, experiencing symptoms, or recently exposed. 
-            Igedla can help you determine if you're positive and the best treatment for you. 
+            Are you at a higher risk of COVID complications, experiencing symptoms, or recently
+            exposed. Igedla can help you determine if you're positive and the best treatment for
+            you.
           </p>
         </div>
       }
-      secondarySlot={<img src={CovidTransparent} alt='covid-logo' />}
+      secondarySlot={<img src={CovidTransparent} alt="covid-logo" />}
     />
     <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight text-blue-800">
+          <h3 className="text-2xl font-semibold leading-tight text-blue-800">
             Check your symptoms
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed text-blue-900">
-
             Whether you have abnormal cholesterol, depression, or a simple cold, you can easily
-            learn more about your symptoms and get in contact with an online doctor if needed. 
+            learn more about your symptoms and get in contact with an online doctor if needed.
           </p>
         </div>
       }
-
-      secondarySlot={<img src={DoctorVisits} alt='chatbot-clipart' />}
-
+      secondarySlot={<img src={DoctorVisits} alt="chatbot-clipart" />}
     />
     {/* <SplitSection
       primarySlot={
@@ -131,7 +134,9 @@ export default () => (
     </section> */}
     <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">See why our customers love us</LabelText>
+        <LabelText className="mb-8 text-gray-600 text-center">
+          See why our customers love us
+        </LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
           {customerData.map(customer => (
             <div key={customer.customerName} className="flex-1 px-3">
@@ -144,7 +149,6 @@ export default () => (
     <section className="container mx-auto my-20 py-24 bg-blue-300 rounded-lg text-center">
       <h3 className="text-5xl font-semibold text-blue-800">How are you feeling today?</h3>
       <p className="mt-8 text-xl font-light text-blue-800">
-
         Download Igedla and try it out for yourself
       </p>
       <p className="mt-8">
