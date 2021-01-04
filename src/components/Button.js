@@ -18,6 +18,7 @@ const Button = ({ children, className = '', size }) => {
         hover:bg-primary-darker
         rounded-full
         text-white
+        font-roboto
     `}
     >
       {children}
