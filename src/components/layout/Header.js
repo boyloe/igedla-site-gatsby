@@ -13,9 +13,9 @@ const Header = () => (
         Igedla
       </div>
       <div className="flex md:justify-end mt-4 sm:mt-0 ">
-        <AnchorLink className="px-6" href="#features">
+        <Link className="px-6" to="/">
           Home
-        </AnchorLink>
+        </Link>
         <AnchorLink className="px-6" href="#services">
           About
         </AnchorLink>
