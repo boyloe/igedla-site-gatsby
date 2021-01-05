@@ -35,15 +35,15 @@ export default () => (
         </div>
         <div className="lg:w-1/2 relative">
           <img
-            className="mx-auto lg:mb-32 lg:ml-64 lg:inline-flex rounded-lg shadow-lg lg:absolute shadow-3xl-blue"
+            className="hidden mx-auto lg:mb-32 lg:ml-64 lg:inline-flex rounded-lg lg:absolute shadow-3xl-blue-wide"
             src={WelcomeScreenShot}
-            alt="chat bot screenshot"
+            alt="Welcome screenshot"
           />
           <img
 
-            className="mt-48 ml-32 hidden lg:inline-flex rounded-lg shadow-lg absolute z-10 shadow-3xl-blue"
+            className="hidden mt-48 ml-32 lg:inline-flex rounded-lg  absolute z-10 shadow-3xl-blue-wide"
             src={GetResultsScreenShot}
-            alt="chat bot screenshot"
+            alt="Get results faster"
           />
         </div>
       </div>
@@ -96,7 +96,7 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<img className="ml-16 rounded-lg shadow-3xl-blue" src={TellUsYourSymptomsScreenShot} alt="chatbot-clipart" />}
+      secondarySlot={<img className="lg:ml-16 rounded-lg shadow-3xl-blue" src={TellUsYourSymptomsScreenShot} alt="chatbot-clipart" />}
     />
     <SplitSection
       id="services"
@@ -137,7 +137,6 @@ export default () => (
       <p className="mt-8 flex justify-center">
         <a href='https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
           <img 
-            className="transform-gpu scale-50"
             alt='Get it on Google Play' 
             src={GooglePlayBadge}
           />

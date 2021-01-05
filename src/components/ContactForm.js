@@ -5,7 +5,7 @@ import { formatClassNames } from '../functions/formatClassNames'
 
 const ContactForm = () => {
   return (
-    <div classNameName="h-screen bg-cover flex justify-center">
+    <div className="h-screen bg-cover flex justify-center">
       <Formik
         initialValues={{
           firstName: '',
