@@ -9,30 +9,40 @@ import SplitSection from '../components/SplitSection';
 // import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import WelcomeScreenShot from '../assets/ScreenShots/igedla_mobile_welcome_screensWelcome-Screen---01.png';
+import GetResultsScreenShot from '../assets/ScreenShots/igedla_mobile_welcome_screensWelcome-Screen---03.png'
+import TellUsYourSymptomsScreenShot from '../assets/ScreenShots/igedla_mobile_welcome_screensWelcome-Screen---02.png'
 import IgedlaLogo from '../assets/cropped-logo-igedla.png';
 import CovidTransparent from '../assets/coronavirus_transparent.png';
 import DoctorVisits from '../assets/doctor-visits.png';
+import GooglePlayBadge from '../assets/google-play-badge.png'
 
 export default () => (
   <Layout>
-    <section className="h-screen pt-20 md:pt-24 bg-blue-300">
+    <section className="h-screen pt-20 md:pt-24 bg-blue-200">
       <div className="container mx-auto px-2 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
-          <img src={IgedlaLogo} alt="Igedla-logo" />
+          <img className="" src={IgedlaLogo} alt="Igedla-logo" />
           <p className="text-xl lg:text-2xl mt-6 font-roboto text-blue-800 font-light">
             Igedla provides quick and easy results—so you know what’s going on right away and how to
             fix it:
           </p>
           <p className="mt-8 md:mt-12 font-roboto">
-            <Button size="lg">Get the App!</Button>
+          <a href='https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <Button className="font-roboto" size="lg">Get the App!</Button>
+          </a>
           </p>
           <p className="mt-4 text-gray-600 font-roboto">Available on iOS and Android</p>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 relative">
+          <img
+            className="mx-auto lg:mb-32 lg:ml-64 lg:inline-flex rounded-lg shadow-lg lg:absolute shadow-3xl-blue"
+            src={WelcomeScreenShot}
+            alt="chat bot screenshot"
+          />
           <img
 
-            className="mb-32 ml-64 hidden lg:inline-flex rounded-lg shadow-lg object-right-top"
-            src={WelcomeScreenShot}
+            className="mt-48 ml-32 hidden lg:inline-flex rounded-lg shadow-lg absolute z-10 shadow-3xl-blue"
+            src={GetResultsScreenShot}
             alt="chat bot screenshot"
           />
         </div>
@@ -86,7 +96,7 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<img src={DoctorVisits} alt="chatbot-clipart" />}
+      secondarySlot={<img className="ml-16 rounded-lg shadow-3xl-blue" src={TellUsYourSymptomsScreenShot} alt="chatbot-clipart" />}
     />
     <SplitSection
       id="services"
@@ -117,15 +127,21 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-20 py-24 bg-blue-300 rounded-full text-center">
+    <section className="container mx-auto my-20 py-24 bg-blue-300 rounded-lg text-center">
       <h3 className="text-5xl font-semibold text-blue-800 font-roboto">
         How are you feeling today?
       </h3>
       <p className="mt-8 text-xl font-light text-blue-800 font-roboto">
         Download Igedla and try it out for yourself
       </p>
-      <p className="mt-8">
-        <Button size="xl">Get Started Now</Button>
+      <p className="mt-8 flex justify-center">
+        <a href='https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+          <img 
+            className="transform-gpu scale-50"
+            alt='Get it on Google Play' 
+            src={GooglePlayBadge}
+          />
+        </a>
       </p>
     </section>
   </Layout>
