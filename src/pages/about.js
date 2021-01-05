@@ -9,7 +9,7 @@ const About = () => {
     <Layout>
       <section>
         <div className="w-screen flex flex-col">
-          <img className="rounded shadow-xl flex-grow opacity-" src={AboutBanner} alt="igedla-banner" />
+          <img className="rounded shadow-xl flex-grow" src={AboutBanner} alt="igedla-banner" />
           <h1 className="mt-8 text-2xl text-center font-bold text-blue-800">What is igedla? (pronounced eye-ged-la)</h1>
           <p className="mt-2 px-8 py-2 text-gray-700 font-semibold">
             Igedla is a personalized health information company and offers a free, 

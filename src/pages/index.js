@@ -46,7 +46,7 @@ export default () => (
 
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="mb-8">
+            <Card className="mb-8 bg-blue-400">
               <p className="font-semibold  font-roboto text-xl">What's going on:</p>
               <p className="mt-4 font-roboto">
                 Igedla/Iggy understands you and helps you make sense of your symptoms.
@@ -54,7 +54,7 @@ export default () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8">
+            <Card className="mb-8 bg-blue-400">
               <p className="font-semibold  font-roboto text-xl">How to fix it:</p>
               <p className="mt-4 font-roboto">
                 Whether it's self-care or urgent care, Iggy will always recommend the right next
@@ -63,7 +63,7 @@ export default () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8">
+            <Card className="mb-8 bg-blue-400">
               <p className="font-semibold font-roboto text-xl">Iggy Checks Back in:</p>
               <p className="mt-4 font-roboto">
                 If you give us permission, we'll follow up on your progress via text
