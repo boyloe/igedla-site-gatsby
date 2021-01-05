@@ -30,8 +30,9 @@ export default () => (
         </div>
         <div className="lg:w-1/2">
           <img
-            className="mb-32 ml-64 hidden lg:inline-flex rounded-lg shadow-lg "
-            src={WelcomeScreenShot}
+
+            className="mb-32 ml-64 hidden lg:inline-flex rounded-lg shadow-lg object-right-top"
+            src={ChatScreenShot}
             alt="chat bot screenshot"
           />
         </div>
