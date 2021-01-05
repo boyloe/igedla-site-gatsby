@@ -16,8 +16,8 @@ import DoctorVisits from '../assets/doctor-visits.png';
 
 export default () => (
   <Layout>
-    <section className="pt-20 md:pt-40 bg-blue-300">
-      <div className="container mx-auto px-8 lg:flex">
+    <section className="h-screen pt-20 md:pt-24 bg-blue-300">
+      <div className="container mx-auto px-2 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <img src={IgedlaLogo} alt="Igedla-logo" />
           <p className="text-xl lg:text-2xl mt-6 font-roboto text-blue-800 font-light">
@@ -31,7 +31,7 @@ export default () => (
         </div>
         <div className="lg:w-1/2">
           <img
-            className="mb-8 ml-48 hidden lg:inline-flex rounded-lg shadow-xl"
+            className="mb-32 ml-64 hidden lg:inline-flex rounded-lg shadow-lg object-right-top"
             src={ChatScreenShot}
             alt="chat bot screenshot"
           />

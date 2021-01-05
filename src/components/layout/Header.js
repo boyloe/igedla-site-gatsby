@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import IgedlaLogo from '../../assets/cropped-logo-igedla.png';
 
-
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
@@ -13,7 +12,7 @@ const Header = () => (
           </Link>
         </div>
       </div>
-      <div className="flex md:justify-end mt-4 sm:mt-0 ">
+      <div className="flex flex-col md:flex-row self-start md:justify-end mt-4 sm:mt-0 ">
         <Link className="px-6 font-roboto" to="/">
           Home
         </Link>
