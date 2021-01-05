@@ -14,7 +14,7 @@ const ContactForm = () => {
           message: ''
         }}
         onSubmit={(values, { resetForm }) => {
-          fetch('https://formspree.io/f/mrgoydgj', {
+          fetch('https://formspree.io/f/meqpvopg', {
             method: 'POST',
             headers: {
               Accept: 'Application/json'
