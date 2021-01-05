@@ -7,7 +7,7 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, size, className = '' }) => {
   return (
     <button
       type="button"
@@ -18,7 +18,6 @@ const Button = ({ children, className = '', size }) => {
         hover:bg-primary-darker
         rounded-full
         text-white
-        font-roboto
     `}
     >
       {children}

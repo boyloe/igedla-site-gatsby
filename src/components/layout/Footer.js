@@ -12,9 +12,6 @@ const Footer = () => (
         <h2 className="text-lg font-semibold">Important Links</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="/">Terms &amp; Conditions</a>
-          </li>
-          <li>
             <Link to="/privacy">Privacy Policy</Link>
           </li>
         </ul>
