@@ -32,7 +32,7 @@ export default () => (
           <img
 
             className="mb-32 ml-64 hidden lg:inline-flex rounded-lg shadow-lg object-right-top"
-            src={ChatScreenShot}
+            src={WelcomeScreenShot}
             alt="chat bot screenshot"
           />
         </div>
