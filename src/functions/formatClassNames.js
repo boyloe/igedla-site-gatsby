@@ -1,2 +1,2 @@
-const formatClassNames = (...classes) => classes.filter(Boolean).join(' ');
-export default formatClassNames;
+export const formatClassNames = (...classes) => classes.filter(Boolean).join(' ');
+

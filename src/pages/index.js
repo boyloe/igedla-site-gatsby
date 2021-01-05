@@ -16,7 +16,7 @@ import DoctorVisits from '../assets/doctor-visits.png';
 
 export default () => (
   <Layout>
-    <section className="pt-20 md:pt-24 bg-blue-300">
+    <section className="h-screen pt-20 md:pt-24 bg-blue-300">
       <div className="container mx-auto px-2 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <img src={IgedlaLogo} alt="Igedla-logo" />

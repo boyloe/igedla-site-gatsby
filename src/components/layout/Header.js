@@ -12,7 +12,7 @@ const Header = () => (
           </Link>
         </div>
       </div>
-      <div className="flex md:justify-end mt-4 sm:mt-0 ">
+      <div className="flex flex-col md:flex-row self-start md:justify-end mt-4 sm:mt-0 ">
         <Link className="px-6 font-roboto" to="/">
           Home
         </Link>
