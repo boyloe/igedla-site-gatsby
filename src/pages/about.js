@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import AboutBanner from '../assets/banner1.jpg';
+import AboutBanner from '../assets/crownBanner.jpg';
 
 const About = () => {
   return (
@@ -32,87 +32,83 @@ const About = () => {
         
 
         <section>
-            <div class="container flex flex-wrap pt-4 pb-10 m-auto mt-6 md:mt-15 lg:px-12 xl:px-16">
-            <div class="w-full px-0 lg:px-4">
-            <h2 class="px-12 text-base font-bold text-center md:text-2xl text-blue-700">
+            <div className="container flex flex-wrap pt-4 pb-10 m-auto mt-6 md:mt-15 lg:px-12 xl:px-16">
+            <div className="w-full px-0 lg:px-4">
+            <h2 className="px-12 text-base font-bold text-center md:text-3xl text-blue-700">
                 Discover What We Do
             </h2>
-            <p class="py-1 text-sm text-center text-blue-700 mb-10">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            <p className="py-1 text-sm text-center text-blue-700 mb-10 md:text-2xl italic">
+              We're improving access to the type of health care we would want for ourselves
             </p>
-            <div class="flex flex-wrap items-center justify-center py-4 pt-0">
-                <div class="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
-                <label class="flex flex-col rounded-lg shadow-lg group relative cursor-pointer hover:shadow-2xl">
-                    <div class="w-full px-4 py-6 rounded-t-lg card-section-1">
-                    <h3 class="mx-auto text-base font-semibold text-center underline text-blue-500 group-hover:text-white">
+            <div className="flex flex-wrap items-center justify-center py-4 pt-0">
+                <div className="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                <label className="flex flex-col rounded-lg shadow-lg group relative cursor-pointer hover:shadow-2xl-blue">
+                    <div className="w-full px-4 py-6 rounded-t-lg card-section-1">
+                    <h3 className="mx-auto text-xl font-semibold font-roboto text-center underline text-blue-700 group-hover:text-white">
                         COVID-19 Screening
                     </h3>
-                    <p class="text-5xl font-bold text-center group-hover:text-white text-blue-500">
-                        $25.<span class="text-3xl">95</span>
+                    <p className="text-md font-bold font-roboto text-center group-hover:text-white text-blue-500">
+                      Understand your symptoms and risks of COVID-19 with Igedla's free Coronavirus assessment tool
                     </p>
-                    <p class="text-xs text-center uppercase group-hover:text-white text-blue-500">
-                        monthly
+                    <p className="text-xs text-center uppercase group-hover:text-white text-blue-500">
                     </p>
                     </div>
                     <div
-                    class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500"
+                    className="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500"
                     >
-                    <p class="text-xl text-white">
-                        1 month
+                    <p className="text-xl text-white">
                     </p>
-                    <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white border border-transparent rounded text-blue-500">
+                    <button className="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white border border-transparent rounded text-blue-500">
                         Get Started
                     </button>
                     </div>
                 </label>
                 </div>
 
-                <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-                <label class="flex flex-col rounded-lg shadow-lg relative cursor-pointer hover:shadow-2xl">
-                    <div class="w-full px-4 py-8 rounded-t-lg bg-blue-500">
-                    <h3 class="mx-auto text-base font-semibold text-center underline text-white group-hover:text-white">
+                <div className="w-full p-4 md:w-1/2 lg:w-1/4">
+                <label className="flex flex-col rounded-lg shadow-lg relative cursor-pointer hover:shadow-2xl-blue">
+                    <div className="w-full px-4 py-8 rounded-t-lg bg-blue-500">
+                    <h3 className="mx-auto text-xl font-semibold font-roboto text-center underline text-white group-hover:text-white">
                         Symptoms Checker
                     </h3>
-                    <p class="text-5xl font-bold text-center text-white">
-                        $21.<span class="text-3xl">95</span>
+                    <p className="text-md font-bold font-roboto text-center text-white">
+                        Igedla asks simple, relevant questions to help you understand 
+                        symptoms concerning you or your kids and gives you immediate 
+                        answers you can trust.
                     </p>
-                    <p class="text-xs text-center uppercase text-white">
-                        monthly
+                    <p className="text-xs text-center uppercase text-white">
                     </p>
                     </div>
                     <div
-                    class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-700"
+                    className="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-700"
                     >
-                    <p class="text-xl text-white">
-                        3 months
+                    <p className="text-xl text-white">
                     </p>
-                    <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white border border-transparent rounded text-blue-500">
+                    <button className="w-5/6 py-2 mt-2 font-semibold font-roboto text-center uppercase bg-white border border-transparent rounded text-blue-500">
                         Get Started
                     </button>
                     </div>
                 </label>
                 </div>
 
-                <div class="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
-                <label class="flex flex-col rounded-lg shadow-lg group card-group relative hover:bg-jblue-secondary cursor-pointer hover:shadow-2xl">
-                    <div class="w-full px-4 py-6 rounded-t-lg card-section-1">
-                    <h3 class="mx-auto text-base font-semibold text-center underline text-blue-500 group-hover:text-white">
-                        Diagnosis
+                <div className="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                <label className="flex flex-col rounded-lg shadow-lg group card-group relative hover:bg-jblue-secondary cursor-pointer hover:shadow-2xl-blue">
+                    <div className="w-full px-4 py-6 rounded-t-lg card-section-1">
+                    <h3 className="mx-auto text-xl font-semibold font-roboto text-center underline text-blue-500 group-hover:text-white">
+                        Medication Delivery
                     </h3>
-                    <p class="text-5xl font-bold text-center group-hover:text-white text-blue-500">
-                        $19.<span class="text-3xl">45</span>
+                    <p className="text-md font-bold text-center font-roboto group-hover:text-white text-blue-500">
+                        Get the medication you need quickly without having to leave the your home. 
                     </p>
-                    <p class="text-xs text-center uppercase group-hover:text-white text-blue-500">
-                        monthly
+                    <p className="text-xs text-center uppercase group-hover:text-white text-blue-500">
                     </p>
                     </div>
                     <div
-                    class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500"
+                    className="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500"
                     >
-                    <p class="text-xl text-white">
-                        6 months
+                    <p className="text-xl text-white">
                     </p>
-                    <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white border border-transparent rounded text-blue-500">
+                    <button className="w-5/6 py-2 mt-2 font-semibold font-roboto text-center uppercase bg-white border border-transparent rounded text-blue-500">
                         Get Started
                     </button>
                     </div>
