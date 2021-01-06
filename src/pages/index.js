@@ -8,8 +8,7 @@ import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 // import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
-// eslint-disable-next-line import/no-unresolved
-import ChatScreenShot from '../assets/IgedlaChatScreenShot.png';
+import WelcomeScreenShot from '../assets/ScreenShots/igedla_mobile_welcome_screensWelcome-Screen---01.png';
 import IgedlaLogo from '../assets/cropped-logo-igedla.png';
 import CovidTransparent from '../assets/coronavirus_transparent.png';
 import DoctorVisits from '../assets/doctor-visits.png';
@@ -31,6 +30,7 @@ export default () => (
         </div>
         <div className="lg:w-1/2">
           <img
+
             className="mb-32 ml-64 hidden lg:inline-flex rounded-lg shadow-lg object-right-top"
             src={ChatScreenShot}
             alt="chat bot screenshot"
