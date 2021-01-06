@@ -16,7 +16,7 @@ import GooglePlayBadge from '../assets/google-play-badge.png';
 
 export default () => (
   <Layout>
-    <section className="h-fit pt-10 md:pt-24 bg-blue-200">
+    <section className="h-fit pt-10 md:py-12 bg-blue-200">
       <div className="container mx-auto px-2 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <img className="" src={IgedlaLogo} alt="Igedla-logo" />
@@ -52,14 +52,14 @@ export default () => (
         </div>
       </div>
     </section>
-    <h2 className="text-center pt-4 text-3xl lg:text-5xl font-semibold font-roboto text-blue-800">
+    <h2 className="text-center pt-4 text-3xl lg:text-5xl md:pt-8 font-semibold font-roboto text-blue-800">
       Let's Get Started!
     </h2>
-  <SplitSection
+    <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-xl lg:text-2xl font-semibold  font-roboto leading-tight text-blue-800">
+          <h3 className="text-xl mx-auto lg:text-2xl font-semibold  font-roboto leading-tight text-blue-800">
             Check your symptoms
           </h3>
           <p className="mt-8 text-xl font-light  font-roboto leading-relaxed text-blue-900">
@@ -70,7 +70,7 @@ export default () => (
       }
       secondarySlot={
         <img
-          className="container mx-auto lg:ml-16 rounded-lg shadow-3xl-blue"
+          className="mx-auto lg:ml-40 rounded-lg shadow-3xl-blue"
           src={TellUsYourSymptomsScreenShot}
           alt="chatbot-clipart"
         />
@@ -89,7 +89,7 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<img className="container mx-auto" src={CovidTransparent} alt="covid-logo" />}
+      secondarySlot={<img className="" src={CovidTransparent} alt="covid-logo" />}
     />
     <section id="features" className="py-0 lg:pb-32 lg:pt-32">
       <div className="container mx-auto text-center">
