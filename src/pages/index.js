@@ -8,7 +8,6 @@ import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 // import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
-import WelcomeScreenShot from '../assets/ScreenShots/igedla_mobile_welcome_screensWelcome-Screen---01.png';
 import GetResultsScreenShot from '../assets/ScreenShots/igedla_mobile_welcome_screensWelcome-Screen---03.png';
 import TellUsYourSymptomsScreenShot from '../assets/ScreenShots/igedla_mobile_welcome_screensWelcome-Screen---02.png';
 import IgedlaLogo from '../assets/cropped-logo-igedla.png';
@@ -17,7 +16,7 @@ import GooglePlayBadge from '../assets/google-play-badge.png';
 
 export default () => (
   <Layout>
-    <section className="h-screen pt-18 md:pt-24 bg-blue-200">
+    <section className="h-fit pt-10 md:pt-24 bg-blue-200">
       <div className="container mx-auto px-2 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <img className="" src={IgedlaLogo} alt="Igedla-logo" />
@@ -30,12 +29,14 @@ export default () => (
           </p>
           <p className="mt-8 md:mt-12 font-roboto">
             <a href="https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-              <Button className="font-roboto" size="lg">
+              <Button className="font-roboto mt-12 " size="lg">
                 Get the App!
               </Button>
             </a>
           </p>
-          <p className="mt-4 text-gray-600 font-roboto">Available on iOS and Android</p>
+          <p className="mt-4 text-gray-600 font-roboto pb-10 font-bold">
+            Available on iOS and Android
+          </p>
         </div>
         <div className="ml-24 lg:w-1/2 relative">
           <img
@@ -51,46 +52,14 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id="features" className="py-20 lg:pb-32 lg:pt-32">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold font-roboto text-blue-800">
-          Let's Get Started
-        </h2>
-
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-          <div className="flex-1 px-3">
-            <Card className="mb-8 bg-blue-400">
-              <p className="font-semibold  font-roboto text-xl">What's going on:</p>
-              <p className="mt-4 font-roboto">
-                Igedla/Iggy understands you and helps you make sense of your symptoms.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8 bg-blue-400">
-              <p className="font-semibold  font-roboto text-xl">How to fix it:</p>
-              <p className="mt-4 font-roboto">
-                Whether it's self-care or urgent care, Iggy will always recommend the right next
-                steps
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8 bg-blue-400">
-              <p className="font-semibold font-roboto text-xl">Iggy checks back in:</p>
-              <p className="mt-4 font-roboto">
-                If you give us permission, we'll follow up on your progress via text
-              </p>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </section>
-    <SplitSection
+    <h2 className="text-center pt-4 text-3xl lg:text-5xl font-semibold font-roboto text-blue-800">
+      Let's Get Started!
+    </h2>
+  <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-2xl font-semibold  font-roboto leading-tight text-blue-800">
+          <h3 className="text-xl lg:text-2xl font-semibold  font-roboto leading-tight text-blue-800">
             Check your symptoms
           </h3>
           <p className="mt-8 text-xl font-light  font-roboto leading-relaxed text-blue-900">
@@ -101,7 +70,7 @@ export default () => (
       }
       secondarySlot={
         <img
-          className="lg:ml-16 rounded-lg shadow-3xl-blue"
+          className="container mx-auto lg:ml-16 rounded-lg shadow-3xl-blue"
           src={TellUsYourSymptomsScreenShot}
           alt="chatbot-clipart"
         />
@@ -120,11 +89,45 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<img src={CovidTransparent} alt="covid-logo" />}
+      secondarySlot={<img className="container mx-auto" src={CovidTransparent} alt="covid-logo" />}
     />
-    <section id="testimonials" className="py-20 lg:py-20">
+    <section id="features" className="py-0 lg:pb-32 lg:pt-32">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold font-roboto text-blue-800">
+          How Iggy Can Help You
+        </h2>
+
+        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+          <div className="flex-1 px-3">
+            <Card className="mb-8 bg-blue-400 text-white">
+              <p className="font-semibold  font-roboto text-xl">What's going on:</p>
+              <p className="mt-4 font-roboto">
+                Iggy understands you and helps you make sense of your symptoms.
+              </p>
+            </Card>
+          </div>
+          <div className="flex-1 px-3">
+            <Card className="mb-8 bg-blue-400 text-white">
+              <p className="font-semibold  font-roboto text-xl">How to fix it:</p>
+              <p className="mt-4 font-roboto">
+                Whether it's self-care or urgent care, Iggy will always recommend the right next
+                steps
+              </p>
+            </Card>
+          </div>
+          <div className="flex-1 px-3">
+            <Card className="bg-blue-400 text-white">
+              <p className="font-semibold font-roboto text-xl">Iggy checks back in:</p>
+              <p className="mt-4 font-roboto">
+                If you give us permission, we'll follow up on your progress via text
+              </p>
+            </Card>
+          </div>
+        </div>
+      </div>
+      <section id="testimonials" className="py-10 lg:py-20" />
       <div className="container mx-auto">
-        <LabelText className="mb-8 text-blue-800 text-xl text-center font-bold font-roboto">
+        <LabelText className="mb-8 text-blue-800 text-xl mx-4 text-center font-bold font-roboto">
           See why our customers love us
         </LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">

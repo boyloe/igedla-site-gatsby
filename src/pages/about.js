@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import Layout from '../components/layout/Layout';
 import AboutBanner from '../assets/crownBanner.jpg';
@@ -110,7 +112,6 @@ const About = () => {
                   </div>
                 </label>
               </div> */}
-
             </div>
           </div>
         </div>
