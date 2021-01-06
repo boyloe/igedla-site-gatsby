@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { Formik, Field, Form } from 'formik';
-import { formatClassNames } from '../functions/formatClassNames'
+import { formatClassNames } from '../functions/formatClassNames';
 
 const ContactForm = () => {
   return (
@@ -86,23 +86,24 @@ const ContactForm = () => {
               </label>
               <Field
                 className={formatClassNames(
-                  "no-resize", 
-                  "appearance-none", 
-                  "block", "w-full", 
-                  "bg-gray-200", 
-                  "text-gray-700", 
-                  "border", 
-                  "border-gray-200", 
-                  "rounded", 
-                  "py-3", 
-                  "px-4", 
-                  "mb-3", 
-                  "leading-tight", 
-                  "focus:outline-none", 
-                  "focus:bg-white", 
-                  "focus:border-gray-500", 
-                  "h-48", 
-                  "resize-none"
+                  'no-resize',
+                  'appearance-none',
+                  'block',
+                  'w-full',
+                  'bg-gray-200',
+                  'text-gray-700',
+                  'border',
+                  'border-gray-200',
+                  'rounded',
+                  'py-3',
+                  'px-4',
+                  'mb-3',
+                  'leading-tight',
+                  'focus:outline-none',
+                  'focus:bg-white',
+                  'focus:border-gray-500',
+                  'h-48',
+                  'resize-none'
                 )}
                 id="message"
                 name="message"
@@ -115,16 +116,16 @@ const ContactForm = () => {
             <div className="md:w-1/3">
               <button
                 className={formatClassNames(
-                  "shadow-lg", 
-                  "bg-teal-400", 
-                  "hover:bg-teal-500", 
-                  "focus:shadow-outline", 
-                  "focus:outline-none", 
-                  "text-white", 
-                  "font-bold", 
-                  "py-2", 
-                  "px-4", 
-                  "rounded"
+                  'shadow-lg',
+                  'bg-teal-400',
+                  'hover:bg-teal-500',
+                  'focus:shadow-outline',
+                  'focus:outline-none',
+                  'text-white',
+                  'font-bold',
+                  'py-2',
+                  'px-4',
+                  'rounded'
                 )}
                 type="submit"
               >
