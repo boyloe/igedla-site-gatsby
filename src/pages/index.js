@@ -55,7 +55,7 @@ export default () => (
     <h2 className="text-center pt-4 text-3xl lg:text-5xl font-semibold font-roboto text-blue-800">
       Let's Get Started!
     </h2>
-    <SplitSection
+  <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
