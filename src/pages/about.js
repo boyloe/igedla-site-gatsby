@@ -90,8 +90,8 @@ const About = () => {
                   </div>
                 </label>
               </div>
+              {/* <div className="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
 
-              <div className="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
                 <label className="flex flex-col rounded-lg shadow-lg group card-group relative hover:bg-jblue-secondary cursor-pointer hover:shadow-2xl-blue">
                   <div className="w-full px-4 py-6 rounded-t-lg card-section-1">
                     <h3 className="mx-auto text-xl font-semibold font-roboto text-center underline text-blue-500 group-hover:text-white">
@@ -109,7 +109,8 @@ const About = () => {
                     </button>
                   </div>
                 </label>
-              </div>
+              </div> */}
+
             </div>
           </div>
         </div>
