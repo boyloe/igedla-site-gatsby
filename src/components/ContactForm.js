@@ -5,7 +5,7 @@ import { formatClassNames } from '../functions/formatClassNames'
 
 const ContactForm = () => {
   return (
-    <div classNameName="h-screen bg-cover flex justify-center">
+    <div className="h-screen bg-cover flex justify-center">
       <Formik
         initialValues={{
           firstName: '',
@@ -14,7 +14,7 @@ const ContactForm = () => {
           message: ''
         }}
         onSubmit={(values, { resetForm }) => {
-          fetch('https://formspree.io/f/mrgoydgj', {
+          fetch('https://formspree.io/f/meqpvopg', {
             method: 'POST',
             headers: {
               Accept: 'Application/json'

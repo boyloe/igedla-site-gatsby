@@ -26,6 +26,7 @@ const About = () => {
                 , and is intended for use by adults aged 18 to 65 years.
             </p>
             <p className="mt-4 px-8 py-2 text-gray-700 font-semibold"> The app’s AI references a history of diagnoses and treatments to deliver users an insight about how their condition would likely be treated. Our ‘Possible Causes’ engine is unique in being able to handle large and complex medical presentations using multiple AI and enhanced machine learning algorithms while remaining quick and easy to use.</p>
+
         </div>
       </section>
 

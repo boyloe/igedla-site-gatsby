@@ -6,15 +6,15 @@ import IgedlaLogo from '../assets/cropped-logo-igedla.png';
 const Contact = () => {
   return (
     <Layout>
-      <section className="h-screen pt-20 md:pt-24 bg-blue-300">
+      <section className="h-screen pt-10 md:pt-24 bg-blue-300">
         <div className="container mx-auto px-2 lg:flex">
-          <div className="text-center lg:text-left lg:w-1/2 md:pt-24">
-            <img src={IgedlaLogo} alt="Igedla-logo" />
-            <p className="mt-4 text-gray-600 italic">
+          <div className="text-center lg:text-left lg:w-1/2 md:pt-10">
+            <img className="hidden md:block" src={IgedlaLogo} alt="Igedla-logo" />
+            <p className="hidden md:block md:text-gray-600 md:italic">
               Do you have a question or an issue, let us know.
             </p>
           </div>
-          <div className="pb-4">
+          <div className="lg:pb-4">
             <ContactForm />
           </div>
         </div>
