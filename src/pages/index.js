@@ -25,6 +25,9 @@ export default () => (
             Our symptom checker provides quick and easy possible causes—so you know what’s going on
             right away and how to fix it:
           </p>
+          <p className="text-xl lg:text-2xl mt-6 font-roboto text-blue-800 font-light">
+            If something doesn't feel quite right ask Iggy!
+          </p>
           <p className="mt-8 md:mt-12 font-roboto">
             <a href="https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
               <Button className="font-roboto" size="lg">
@@ -74,7 +77,7 @@ export default () => (
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-blue-400">
-              <p className="font-semibold font-roboto text-xl">Iggy Checks Back in:</p>
+              <p className="font-semibold font-roboto text-xl">Iggy checks back in:</p>
               <p className="mt-4 font-roboto">
                 If you give us permission, we'll follow up on your progress via text
               </p>
