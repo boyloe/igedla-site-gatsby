@@ -13,6 +13,7 @@ import TellUsYourSymptomsScreenShot from '../assets/ScreenShots/igedla_mobile_we
 import IgedlaLogo from '../assets/cropped-logo-igedla.png';
 import CovidTransparent from '../assets/coronavirus_transparent.png';
 import GooglePlayBadge from '../assets/google-play-badge.png';
+import FaviconLogo from '../assets/logo-square.png';
 
 export default () => (
   <Layout>
