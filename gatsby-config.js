@@ -5,6 +5,7 @@ module.exports = {
     description: 'Check symptoms, get results fast'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-theme-codebushi`,
       options: {
