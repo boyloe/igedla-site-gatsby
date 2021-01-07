@@ -13,7 +13,6 @@ import TellUsYourSymptomsScreenShot from '../assets/ScreenShots/igedla_mobile_we
 import IgedlaLogo from '../assets/cropped-logo-igedla.png';
 import CovidTransparent from '../assets/coronavirus_transparent.png';
 import GooglePlayBadge from '../assets/google-play-badge.png';
-import FaviconLogo from '../assets/logo-square.png';
 
 export default () => (
   <Layout>
@@ -22,8 +21,8 @@ export default () => (
         <div className="text-center lg:text-left lg:w-1/2">
           <img className="" src={IgedlaLogo} alt="Igedla-logo" />
           <p className="text-xl lg:text-2xl mt-6 font-roboto text-blue-800 font-light">
-            Our symptom checker provides quick and easy possible causes—so you know what’s going on
-            right away and how to fix it:
+            Our symptom checker provides a quick assessment of possible causes---so you know what's
+            going on right away and how to fix it.
           </p>
           <p className="text-xl lg:text-2xl mt-6 font-roboto text-blue-800 font-light">
             If something doesn't feel quite right ask Iggy!
