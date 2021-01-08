@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { Link } from 'gatsby';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import CustomerCard from '../components/CustomerCard';
@@ -13,6 +14,7 @@ import TellUsYourSymptomsScreenShot from '../assets/ScreenShots/igedla_mobile_we
 import IgedlaLogo from '../assets/cropped-logo-igedla.png';
 import CovidTransparent from '../assets/coronavirus_transparent.png';
 import GooglePlayBadge from '../assets/google-play-badge.png';
+import AppStoreBlackBadge from '../assets/appStoreBadges/black.svg';
 
 export default () => (
   <Layout>
@@ -28,11 +30,11 @@ export default () => (
             If something doesn't feel quite right ask Iggy!
           </p>
           <p className="mt-8 md:mt-12 font-roboto">
-            <a href="https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+            <Link to="#download">
               <Button className="font-roboto mt-12 " size="lg">
                 Get the App!
               </Button>
-            </a>
+            </Link>
           </p>
           <p className="mt-4 text-gray-600 font-roboto pb-10 font-bold">
             Available on iOS and Android
@@ -139,18 +141,28 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-10 py-12 bg-blue-300 rounded-lg text-center">
+    <section
+      id="download"
+      className="container mx-auto my-10 py-12 bg-blue-300 rounded-lg text-center"
+    >
       <h3 className="text-5xl font-semibold text-blue-800 font-roboto">
         How are you feeling today?
       </h3>
-      <p className="mt-8 text-xl font-light text-blue-800 font-roboto">
+      <p className="mt-8 text-2xl font-light text-blue-800 font-roboto">
         Download Igedla and try it out for yourself
       </p>
-      <p className="mt-8 flex justify-center">
-        <a href="https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-          <img alt="Get it on Google Play" src={GooglePlayBadge} />
-        </a>
-      </p>
+      <div className="flex flex-col md:flex-row justify-center items-center">
+        <p className="mt-8">
+          <a href="https://play.google.com/store/apps/details?id=com.igedla.health&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+            <img alt="Get it on Google Play" src={GooglePlayBadge} />
+          </a>
+        </p>
+        <p className="mt-8">
+          <a href="https://apps.apple.com/us/app/igedla/id1534336584?itsct=apps_box&amp;itscg=30200">
+            <img src={AppStoreBlackBadge} alt="Download on the App Store" />
+          </a>
+        </p>
+      </div>
     </section>
   </Layout>
 );
