@@ -22,9 +22,9 @@ const Header = () => (
         {/* <Link className="px-2 md:px-6 font-roboto" to="/employers">
           Employers
         </Link> */}
-        {/* <Link className="px-2 md:px-6 font-roboto" to="/faq">
+        <Link className="px-2 md:px-6 font-roboto" to="/faq">
           FAQ
-        </Link> */}
+        </Link>
         <Link className="px-2 md:px-6 font-roboto" to="/contact">
           Contact
         </Link>
